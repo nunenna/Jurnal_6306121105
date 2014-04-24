@@ -1,6 +1,15 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 package pibonacci;
 
+/**
+ *
+ * @author Asisten
+ */
 import java.util.Scanner;
 public class Pibonacci {
 
@@ -9,12 +18,13 @@ public class Pibonacci {
         Scanner inputFibonacci = new Scanner(System.in);
         
         int fibonacciCount = inputFibonacci.nextInt();
-        
+        int hasil=0;
         for (int ii=1; ii <= fibonacciCount; ii++)
         {
-            System.out.print( methodFibonacci(ii));
-             System.out.print(" ");
+            hasil= hasil + methodFibonacci(ii);
+            
         }
+        System.out.print("hasil :"+ hasil);
     }
     
     public static int methodFibonacci(int fibonacciInput)
